@@ -1,12 +1,12 @@
-# Independent Edge
+# Start Forge Academy
 
-Static landing page for a business-startup consulting offer.
+Static landing page for a business-startup consulting offer led by Agnes Riley.
 
 ## Files
 
 - `index.html` - page content and structure
 - `styles.css` - responsive styling
-- `assets/strategy-table.png` - hero image asset
+- `assets/agnes-riley.jpg` - profile image asset
 
 ## Local preview
 
