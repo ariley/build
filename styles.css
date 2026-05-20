@@ -46,6 +46,21 @@ a {
   text-decoration: none;
 }
 
+strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.lede strong,
+.note-panel strong,
+.quote-panel strong,
+.process-copy strong,
+.proof-copy strong,
+.personal-band strong,
+.contact-copy strong {
+  box-shadow: inset 0 -0.35em 0 rgba(79, 102, 132, 0.16);
+}
+
 .site-header {
   position: sticky;
   z-index: 20;
