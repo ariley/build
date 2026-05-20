@@ -1,18 +1,18 @@
 :root {
-  --ink: #292724;
-  --text: #48443e;
-  --muted: #777169;
-  --paper: #e9e1d6;
-  --paper-deep: #d8cec1;
-  --white: #f7f1e9;
-  --line: #cfc4b6;
-  --sage: #7d8679;
-  --sage-dark: #555e51;
-  --rose: #a8786b;
-  --clay: #8b6b5f;
-  --sand: #cdbda8;
+  --ink: #232729;
+  --text: #44494a;
+  --muted: #6f7370;
+  --paper: #d8d3ca;
+  --paper-deep: #c8c1b7;
+  --white: #ebe7df;
+  --line: #bcb5aa;
+  --sage: #6f7d7a;
+  --sage-dark: #44585d;
+  --rose: #697a82;
+  --clay: #5b6870;
+  --sand: #b8afa3;
   --max: 1160px;
-  --shadow: 0 28px 90px rgba(78, 55, 42, 0.13);
+  --shadow: 0 28px 90px rgba(35, 39, 41, 0.12);
 }
 
 * {
@@ -27,10 +27,12 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(247, 241, 233, 0.78), transparent 34rem),
-    linear-gradient(180deg, #eee7dd 0%, var(--paper) 44%, #ded5c9 100%);
+    radial-gradient(circle at top left, rgba(235, 231, 223, 0.46), transparent 34rem),
+    linear-gradient(180deg, #e1ddd5 0%, var(--paper) 44%, #ccc5bb 100%);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "Source Sans 3", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -53,8 +55,8 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px max(22px, calc((100vw - var(--max)) / 2));
-  border-bottom: 1px solid rgba(207, 196, 182, 0.74);
-  background: rgba(233, 225, 214, 0.84);
+  border-bottom: 1px solid rgba(188, 181, 170, 0.76);
+  background: rgba(216, 211, 202, 0.86);
   backdrop-filter: blur(18px);
 }
 
@@ -67,9 +69,9 @@ a {
 .brand {
   gap: 12px;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.12rem;
-  font-weight: 700;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.22rem;
+  font-weight: 500;
   letter-spacing: 0;
   white-space: nowrap;
 }
@@ -83,16 +85,16 @@ a {
   border-radius: 50%;
   background: var(--white);
   color: var(--clay);
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .nav-links {
   gap: clamp(14px, 2vw, 30px);
   color: var(--muted);
   font-size: 0.9rem;
-  font-weight: 650;
+  font-weight: 400;
 }
 
 .nav-links a:hover,
@@ -106,7 +108,7 @@ a {
   border: 1px solid var(--sage);
   border-radius: 999px;
   color: var(--sage-dark);
-  background: rgba(247, 241, 233, 0.72);
+  background: rgba(235, 231, 223, 0.72);
   text-align: center;
 }
 
@@ -138,7 +140,7 @@ a {
   margin: 0 0 15px;
   color: var(--clay);
   font-size: 0.72rem;
-  font-weight: 750;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -150,8 +152,8 @@ a {
 .contact-copy h2 {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.02;
 }
@@ -184,7 +186,7 @@ a {
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 13px 22px;
-  font-weight: 750;
+  font-weight: 500;
   text-align: center;
   transition:
     transform 150ms ease,
@@ -200,12 +202,12 @@ a {
 .button-primary {
   color: var(--white);
   background: var(--sage-dark);
-  box-shadow: 0 16px 36px rgba(86, 96, 79, 0.18);
+  box-shadow: 0 16px 36px rgba(68, 88, 93, 0.18);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: #444d3f;
+  background: #34464b;
 }
 
 .text-action {
@@ -213,7 +215,7 @@ a {
   align-items: center;
   gap: 11px;
   color: var(--ink);
-  font-weight: 750;
+  font-weight: 500;
 }
 
 .text-action::after {
@@ -232,9 +234,9 @@ a {
 .profile-card {
   position: relative;
   padding: 18px 18px 24px;
-  border: 1px solid rgba(207, 196, 182, 0.78);
+  border: 1px solid rgba(188, 181, 170, 0.8);
   border-radius: 220px 220px 18px 18px;
-  background: rgba(247, 241, 233, 0.88);
+  background: rgba(235, 231, 223, 0.88);
   box-shadow: var(--shadow);
 }
 
@@ -269,7 +271,7 @@ a {
   padding: clamp(34px, 6vw, 70px);
   border: 1px solid var(--line);
   border-radius: 28px;
-  background: var(--white);
+  background: #e3ded5;
   box-shadow: var(--shadow);
 }
 
@@ -277,9 +279,9 @@ a {
   max-width: 980px;
   margin: 0 auto;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: clamp(1.75rem, 4vw, 3.45rem);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.12;
   text-align: center;
 }
@@ -318,7 +320,7 @@ a {
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: rgba(255, 250, 246, 0.72);
+  background: rgba(235, 231, 223, 0.72);
 }
 
 .work-grid article {
@@ -327,16 +329,16 @@ a {
 
 .work-grid span {
   color: var(--rose);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .work-grid h3,
 .offer-card h3 {
   margin: 30px 0 12px;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: 1.42rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.16;
 }
 
@@ -358,7 +360,7 @@ a {
   padding: clamp(36px, 5vw, 62px);
   border-radius: 30px;
   background:
-    linear-gradient(135deg, rgba(247, 241, 233, 0.72), rgba(216, 206, 193, 0.92)),
+    linear-gradient(135deg, rgba(235, 231, 223, 0.68), rgba(200, 193, 183, 0.92)),
     var(--paper-deep);
 }
 
@@ -377,10 +379,10 @@ a {
   padding: 9px 13px;
   border: 1px solid rgba(127, 138, 120, 0.22);
   border-radius: 999px;
-  background: rgba(247, 241, 233, 0.62);
+  background: rgba(235, 231, 223, 0.62);
   color: var(--sage-dark);
   font-size: 0.9rem;
-  font-weight: 720;
+  font-weight: 400;
 }
 
 .personal-band {
@@ -407,9 +409,9 @@ a {
 }
 
 .featured-offer {
-  border-color: rgba(127, 138, 120, 0.34);
-  background: #eef1e9;
-  box-shadow: 0 22px 62px rgba(86, 96, 79, 0.14);
+  border-color: rgba(68, 88, 93, 0.28);
+  background: #dfe3df;
+  box-shadow: 0 22px 62px rgba(68, 88, 93, 0.13);
 }
 
 .offer-card h3 {
@@ -421,7 +423,7 @@ a {
   width: fit-content;
   margin-top: auto;
   color: var(--sage-dark);
-  font-weight: 800;
+  font-weight: 500;
   border-bottom: 1px solid currentColor;
 }
 
@@ -433,9 +435,9 @@ a {
   max-width: 1000px;
   margin: 0 auto;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: clamp(2rem, 4.5vw, 4.2rem);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.08;
   text-align: center;
 }
@@ -460,9 +462,9 @@ a {
   padding: 8px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(247, 241, 233, 0.72);
+  background: rgba(235, 231, 223, 0.72);
   color: var(--ink);
-  font-weight: 720;
+  font-weight: 400;
 }
 
 .contact-form {
@@ -480,7 +482,7 @@ a {
   gap: 8px;
   color: var(--ink);
   font-size: 0.86rem;
-  font-weight: 760;
+  font-weight: 400;
 }
 
 .contact-form input,
@@ -490,7 +492,7 @@ a {
   border-radius: 14px;
   padding: 14px 15px;
   color: var(--ink);
-  background: #eee6dc;
+  background: #ddd8cf;
   font: inherit;
 }
 
@@ -500,7 +502,7 @@ a {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 3px solid rgba(127, 138, 120, 0.22);
+  outline: 3px solid rgba(68, 88, 93, 0.2);
   border-color: var(--sage);
 }
 
@@ -522,7 +524,7 @@ a {
 
 .site-footer p {
   margin: 0;
-  font-weight: 820;
+  font-weight: 500;
 }
 
 .site-footer a {
