@@ -425,8 +425,8 @@ a {
 
 .process-list article {
   display: grid;
-  grid-template-columns: 46px 1fr;
-  column-gap: 18px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  column-gap: 22px;
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -436,6 +436,7 @@ a {
 }
 
 .process-list span {
+  grid-row: 1 / span 2;
   color: var(--clay);
   font-size: 0.78rem;
   font-weight: 500;
@@ -443,11 +444,17 @@ a {
 }
 
 .process-list h3 {
+  grid-column: 2;
   margin: 0 0 5px;
   color: var(--ink);
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: 1.42rem;
   font-weight: 400;
+}
+
+.process-list p {
+  grid-column: 2;
+  max-width: 36rem;
 }
 
 .proof {
@@ -722,6 +729,12 @@ a {
   .process-list article {
     grid-template-columns: 1fr;
     row-gap: 6px;
+  }
+
+  .process-list span,
+  .process-list h3,
+  .process-list p {
+    grid-column: 1;
   }
 
   .path-grid article,
