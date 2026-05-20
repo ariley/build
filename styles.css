@@ -6,8 +6,8 @@
   --paper-deep: #d9dde0;
   --white: #fafafa;
   --line: #c7d0d2;
-  --sage: #657685;
-  --sage-dark: #263f5a;
+  --accent: #4f6684;
+  --accent-dark: #223a5c;
   --rose: #536b82;
   --clay: #405a70;
   --sand: #e3e5e7;
@@ -105,9 +105,9 @@ a {
 .nav-cta {
   min-width: 78px;
   padding: 10px 17px;
-  border: 1px solid var(--sage);
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  color: var(--sage-dark);
+  color: var(--accent-dark);
   background: rgba(250, 250, 250, 0.78);
   text-align: center;
 }
@@ -116,6 +116,7 @@ a {
 .note-panel,
 .paths,
 .work,
+.process,
 .proof,
 .personal-band,
 .offers,
@@ -202,13 +203,13 @@ a {
 
 .button-primary {
   color: var(--white);
-  background: var(--sage-dark);
+  background: var(--accent-dark);
   box-shadow: 0 16px 36px rgba(68, 88, 93, 0.18);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: #34464b;
+  background: #192f4d;
 }
 
 .text-action {
@@ -336,7 +337,7 @@ a {
 }
 
 .path-grid article:nth-child(2) {
-  background: #dfe6ee;
+  background: #e1e6ee;
 }
 
 .path-label {
@@ -383,11 +384,70 @@ a {
 
 .work-grid p,
 .offer-card p,
+.process-copy p,
+.process-list p,
 .proof-copy p,
 .personal-band p,
 .contact-copy p {
   margin: 0;
   color: var(--muted);
+}
+
+.process {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  gap: clamp(34px, 6vw, 76px);
+  align-items: start;
+  padding: 72px clamp(26px, 5vw, 58px);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: rgba(250, 250, 250, 0.7);
+}
+
+.process-copy h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.25rem, 4.4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.process-copy p {
+  margin-top: 22px;
+  font-size: 1.08rem;
+}
+
+.process-list {
+  display: grid;
+  gap: 12px;
+}
+
+.process-list article {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  column-gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.process-list article:last-child {
+  border-bottom: 0;
+}
+
+.process-list span {
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+
+.process-list h3 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.42rem;
+  font-weight: 400;
 }
 
 .proof {
@@ -419,7 +479,7 @@ a {
   border: 1px solid rgba(49, 79, 90, 0.16);
   border-radius: 999px;
   background: rgba(250, 250, 250, 0.68);
-  color: var(--sage-dark);
+  color: var(--accent-dark);
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -449,7 +509,7 @@ a {
 
 .featured-offer {
   border-color: rgba(68, 88, 93, 0.28);
-  background: #dfe6ee;
+  background: #e1e6ee;
   box-shadow: 0 22px 62px rgba(38, 63, 90, 0.12);
 }
 
@@ -461,7 +521,7 @@ a {
 .offer-card a {
   width: fit-content;
   margin-top: auto;
-  color: var(--sage-dark);
+  color: var(--accent-dark);
   font-weight: 500;
   border-bottom: 1px solid currentColor;
 }
@@ -542,7 +602,7 @@ a {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: 3px solid rgba(68, 88, 93, 0.2);
-  border-color: var(--sage);
+  border-color: var(--accent);
 }
 
 .contact-form .button {
@@ -581,6 +641,7 @@ a {
   }
 
   .hero,
+  .process,
   .proof,
   .personal-band,
   .contact {
@@ -652,6 +713,15 @@ a {
 
   .proof {
     margin-top: 58px;
+  }
+
+  .process {
+    padding: 34px 24px;
+  }
+
+  .process-list article {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
   }
 
   .path-grid article,
